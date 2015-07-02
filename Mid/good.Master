@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="good.master.cs" Inherits="Mid.good" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="/Content/Styles.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <form id="form1" runat="server">
+            <div id="PageWrapper">
+                
+
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Midterm</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><p>Midterm test</p></a>
+                          
+                        </div> <!-- navber-header -->
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/Courses">Courses</a></li>
+                                
+                               
+                            </ul>
+                      
+                        </div>  <!-- /.navbar-collapse -->
+                  </div>
+                </nav>
+                <section id="MainContent">
+
+                    <asp:ContentPlaceHolder ID="myMainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
+
+
+                <footer class="container-fluid">
+                    <nav class="nav navbar-inverse navbar-fixed-bottom">
+                        <h4 class="navbar-text">&copy;Midterm test Made By 200255269 </h4>
+
+                    </nav>
+               </footer>
+
+            </div>
+
+
+
+        </form>
+    </div>
+    <!-- javaScript library Section -->
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+</body>
+</html>
